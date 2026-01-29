@@ -40,7 +40,7 @@ class dice_roller:
     }
 
 
-    def __init__(self, num_dice:int = 5):
+    def __init__(self, num_dice:int = 3):
         self.num_dice = num_dice
         self.values = []
         for num in range(self.num_dice) :
@@ -49,7 +49,7 @@ class dice_roller:
     def roll(self):
         for i in range(self.num_dice):
             self.values[i] = random.randint(1,6)
-
+    
     def get_total(self):
         total = 0 
         for num in self.values:
@@ -66,3 +66,8 @@ class dice_roller:
             print()
 
 
+#starter = dice_roller(3)
+
+#starter.roll()
+#starter.get_total()
+#starter.print_die()
