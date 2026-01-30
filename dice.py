@@ -62,7 +62,7 @@ class dice_roller:
         #        print(line)
         for line in range(5):
             for die in self.values:
-                print(self.dice_art.get(die)[line], end = "")
+                print(self.dice_art.get(die)[line], end = '')
             print()
 
 
