@@ -49,6 +49,7 @@ class dice_roller:
     def roll(self):
         for i in range(self.num_dice):
             self.values[i] = random.randint(1,6)
+        return self.values
     
     def get_total(self):
         total = 0 
